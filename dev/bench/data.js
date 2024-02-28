@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1708733109759,
+  "lastUpdate": 1709153542910,
   "repoUrl": "https://github.com/simonrw/pyo3",
   "entries": {
     "pyo3-bench": [
@@ -412,6 +412,420 @@ window.BENCHMARK_DATA = {
           {
             "name": "tuple_into_py",
             "value": 88,
+            "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mail@davidhewitt.dev",
+            "name": "David Hewitt",
+            "username": "davidhewitt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a12970c9694f8340318235173e53b80ee9d4ff7",
+          "message": "update `extract_argument` to use Bound APIs (#3708)\n\n* update `extract_argument` to use `Bound` APIs\n\n* tidy up borrow in macros expression\n\n* update `trybuild` output\n\n* more concise form for `DowncastError::new`\n\nCo-authored-by: Lily Foote <code@lilyf.org>\n\n* use `Borrowed` instead of newtype\n\n* use `Borrowed::from_ptr` methods in extract_argument\n\n* update UI tests\n\n* avoid double-negative `#[cfg]` clauses\n\nCo-authored-by: Lily Foote <code@lilyf.org>\n\n* review: LilyFoote, Icxolu feedback\n\n---------\n\nCo-authored-by: Lily Foote <code@lilyf.org>",
+          "timestamp": "2024-02-28T19:36:20Z",
+          "tree_id": "ad478e202a804f019c1b7974e66a0a68b1c937be",
+          "url": "https://github.com/simonrw/pyo3/commit/8a12970c9694f8340318235173e53b80ee9d4ff7"
+        },
+        "date": 1709153527928,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "identify_object_type",
+            "value": 454,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "collect_generic_iterator",
+            "value": 10706560,
+            "range": "± 298125",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_extract_fail",
+            "value": 242,
+            "range": "± 3",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_small",
+            "value": 57,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_big_negative",
+            "value": 172,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_big_positive",
+            "value": 162,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_huge_negative",
+            "value": 1275,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_huge_positive",
+            "value": 1048,
+            "range": "± 32",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_0",
+            "value": 30997,
+            "range": "± 58",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_method_0",
+            "value": 113811,
+            "range": "± 1547",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ordered_dunder_methods",
+            "value": 46,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ordered_richcmp",
+            "value": 48,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "decimal_via_extract",
+            "value": 365,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_dict",
+            "value": 1083559,
+            "range": "± 5058",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_new",
+            "value": 3280729,
+            "range": "± 24478",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_get_item",
+            "value": 2139785,
+            "range": "± 33067",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashmap",
+            "value": 4714632,
+            "range": "± 254460",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreemap",
+            "value": 7626508,
+            "range": "± 85381",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "mapping_from_dict",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "err_new_restore_and_fetch",
+            "value": 143,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "err_new_without_gil",
+            "value": 13,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_extract_success",
+            "value": 14,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_extract_fail",
+            "value": 36,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_downcast_success",
+            "value": 10,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_downcast_fail",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_extract_success",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_extract_fail",
+            "value": 244,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_downcast_success",
+            "value": 4,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_downcast_fail",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_extract_success",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_extract_fail",
+            "value": 236,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_downcast_success",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_downcast_fail",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "enum_from_pyobject",
+            "value": 875,
+            "range": "± 25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_via_downcast",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_via_extract",
+            "value": 6,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "not_a_list_via_downcast",
+            "value": 1,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "not_a_list_via_extract",
+            "value": 30,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "not_a_list_via_extract_enum",
+            "value": 497,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "f64_from_pyobject",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_acquire_gil",
+            "value": 63,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dirty_acquire_gil",
+            "value": 64,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "getattr_direct",
+            "value": 98,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "getattr_intern",
+            "value": 25,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_list",
+            "value": 727743,
+            "range": "± 56668",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_new",
+            "value": 957545,
+            "range": "± 204819",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item",
+            "value": 558921,
+            "range": "± 1727",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item_unchecked",
+            "value": 513055,
+            "range": "± 133038",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "sequence_from_list",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "first_time_init",
+            "value": 3166,
+            "range": "± 240",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "drop_many_objects",
+            "value": 3713,
+            "range": "± 72",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "set_new",
+            "value": 2965018,
+            "range": "± 120293",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_set",
+            "value": 1286338,
+            "range": "± 12982",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashset",
+            "value": 5622747,
+            "range": "± 30335",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreeset",
+            "value": 2019070,
+            "range": "± 35238",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_tuple",
+            "value": 683811,
+            "range": "± 3401",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new",
+            "value": 952711,
+            "range": "± 187893",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item",
+            "value": 651478,
+            "range": "± 6319",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item_unchecked",
+            "value": 496797,
+            "range": "± 15789",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_borrowed_item",
+            "value": 619867,
+            "range": "± 8099",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_borrowed_item_unchecked",
+            "value": 465362,
+            "range": "± 11435",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "sequence_from_tuple",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new_list",
+            "value": 267989,
+            "range": "± 44652",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_to_list",
+            "value": 184745,
+            "range": "± 41051",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_into_py",
+            "value": 91,
             "range": "± 0",
             "unit": "ns/iter"
           }
